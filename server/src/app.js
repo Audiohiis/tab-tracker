@@ -4,7 +4,7 @@ const cors = require('cors')
 const morgan = require('morgan')
 
 const app = express()
-app.use(morgan('combined'))
+app.use(morgan('combined')) // for loggging error messages
 app.use(bodyParser.json())
 app.use(cors())
 
